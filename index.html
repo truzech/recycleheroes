@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recycle Heroes!</title>
+    <script>
+      // Set the theme before first paint so returning light-mode users don't
+      // see a flash of the (now-default) dark theme while the app boots.
+      (function () {
+        var theme = 'dark';
+        try {
+          var stored = localStorage.getItem('recycleHeroesTheme');
+          if (stored === 'light') theme = 'light';
+        } catch (err) {}
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

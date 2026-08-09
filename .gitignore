@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# .NET build output
+rfid-bridge/bin/
+rfid-bridge/obj/
+
+# Editor/OS cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local env files, if any ever show up
+.env
+.env.local
