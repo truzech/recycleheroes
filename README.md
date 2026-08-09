@@ -1,7 +1,6 @@
 # Recycle Heroes!
 
-A single-screen kiosk app for event check-in/registration at a Detroit-area
-recycling nonprofit, plus an admin suite for the volunteer running the table.
+A single-screen kiosk app for event check-in/registration, plus an admin suite.
 No routing, no backend server — all data lives in the browser's
 `localStorage`. Optionally paired with an RFID/NFC card bridge so check-in
 can be a tap instead of typing a username.
